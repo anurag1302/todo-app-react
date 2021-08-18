@@ -5,6 +5,9 @@ const InputBox = () => {
   const [inputControlValue, setInputControlValue] = useState(""); //to set the input value
 
   const getItemsFromLocalStorage = () => {
+    if (localStorage.getItem("todo-items") === null) {
+      return [];
+    }
     return JSON.parse(localStorage.getItem("todo-items"));
   };
 

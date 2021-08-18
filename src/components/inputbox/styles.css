@@ -38,16 +38,19 @@
   padding: 10px;
 }
 .item-container table {
-  width: 50%;
+  width: 70%;
   margin-left: 100px;
 }
 .item-container table tr {
   height: 50px;
   width: 100%;
+  background-color: lightseagreen;
+}
+.item-container table tr:hover {
+  background-color: rgb(190, 236, 234);
 }
 
 .item-container table i {
-  /* border-radius: 2rem; */
   cursor: pointer;
 }
 .item-container table i:hover {
